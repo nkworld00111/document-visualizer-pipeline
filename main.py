@@ -50,10 +50,10 @@ def main(paths):
         print(f"Dashboard created at: {html_path}")
         abs_path = os.path.abspath(html_path)
         if os.path.exists(abs_path):
-            print(f"🌐 Opening dashboard in your browser: {abs_path}")
+            print(f"Opening dashboard in your browser: {abs_path}")
             webbrowser.open(f"file://{abs_path}")
         else:
-            print(f"⚠️ Dashboard file not found: {abs_path}")
+            print(f"Dashboard file not found: {abs_path}")
     except Exception as e:
         print(f"Visualization failed: {e}")
 
